@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to fix “volume bitmap needs minor repair for orphaned blocks” on OS X 10.8
+permalink: /how-to-fix-volume-bitmap-needs-minor-repair-for-orphaned-blocks-on-os-x-10-8/
 ---
 
 Recently I noticed something strange on my Retina Macbook Pro with OS X 10.8.2 (Mountain Lion):

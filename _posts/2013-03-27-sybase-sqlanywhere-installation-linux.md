@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hands-on Sybase SQLAnywhere 12.0.1 Installation on Linux
+permalink: /hands-on-sybase-sqlanywhere-12-0-1-installation-on-linux/
 ---
 
 Environment: Red Hat or SUSE Linux
