@@ -21,31 +21,34 @@ title: 我的wordpress搬家方法
 6. 在你的ftp中建立文件夾,例如backup,將之前第3-3步修改好的sql文件上傳到這個文件夾.
 
 7. 下載bigdump.你將會得到一個bigdump.php的文件.按如下方法修改相應的句子,并把bigdump.php放入第5步的backup文件夾中
-```
-$db_server = '數據庫主機';
-$db_name = '數據庫名稱';
-$db_username = '使用者名稱';
-$db_password = '使用者密碼';
-$filename = '要備份的 sql文件名';
-$linespersession = 3000; // 指每次還原幾筆
-$delaypersession = 0; // 中間間隔要休息幾秒，這里是不休息
-$db_connection_charset = 'utf8'; // 編碼使用的字元是哪一種,記得一定要寫utf8!!否則亂碼!
-```
+
+   ```
+   $db_server = '數據庫主機';
+   $db_name = '數據庫名稱';
+   $db_username = '使用者名稱';
+   $db_password = '使用者密碼';
+   $filename = '要備份的 sql文件名';
+   $linespersession = 3000; // 指每次還原幾筆
+   $delaypersession = 0; // 中間間隔要休息幾秒，這里是不休息
+   $db_connection_charset = 'utf8'; // 編碼使用的字元是哪一種,記得一定要寫utf8!!否則亂碼!
+   ```
 
 8. 運行bigdump.php,例如http://yourname.com/backup/bigdump.php,按照屏幕指示點選start
 
 9. 等待一會后會提示成功,別急,還有這更重要的一步,這樣才能最終解決亂碼問題:
     * 修改wp-includes/wp-db.php內的资料连线设定。详细的修改方式是这样的：
-    ```
-    $this->dbh = @mysql_connect($dbhost,$dbuser,$dbpassword);
-    //加上下面这行
-    $this->query("SET NAMES 'utf8'" );
-    ```
 
-10. 修改wp-config.php,將新的數據庫信息填入.并在wp-config.php中,在MySQL settings下加入這句代碼: 
-```
-define('DB_CHARSET', 'utf8');
-```
+      ```
+      $this->dbh = @mysql_connect($dbhost,$dbuser,$dbpassword);
+      // 加上下面这行
+      $this->query("SET NAMES 'utf8'" );
+      ```
+
+10. 修改wp-config.php,將新的數據庫信息填入.并在wp-config.php中,在MySQL settings下加入這句代碼:
+
+    ```
+    define('DB_CHARSET', 'utf8');
+    ```
 
 11. 大功告成!!
 

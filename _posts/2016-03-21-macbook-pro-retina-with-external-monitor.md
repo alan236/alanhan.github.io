@@ -10,7 +10,6 @@ title: Macbook Pro Retina外接显示器小记
     1. 确保显示器的Color Profile是RGB（在Preferences -&gt; Display中查看）
     2. 确保OS X不要将显示器认作电视（在About This Mac -&gt; System Report -&gt; Graphics/Display查看）
     3. 可以尝试在Preferences -&gt; General中关闭”Use LCD font smoothing when available”
-
 * U2715H支持的接口有DisplayPort, MiniDP, HDMI。从显示效果上排名应该是DisplayPort &gt; DVI &gt; HDMI &gt; VGA。如果可能尽量使用rMBP上的雷电（Thunderbolt）接口。
 * 如果连接rMBP到U2715H并在显示器设置中打开DP 1.2，会导致黑屏，需要特殊方法把DP 1.2关闭：
     1. 将显示器关机

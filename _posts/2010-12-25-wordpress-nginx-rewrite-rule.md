@@ -15,6 +15,7 @@ if ($host !~* ^(www|subdomain))
     rewrite ^/(.*)$ $scheme://www.$host/$1 permanent;  
 }
 ```  
+
 或者  
 
 ```Nginx
@@ -25,6 +26,7 @@ if ($host ~* ^www\.(.*))
     rewrite ^/(.*)$ $scheme://$host_without_www/$1 permanent;  
 }
 ```
+
 再加入  
 
 ```Nginx

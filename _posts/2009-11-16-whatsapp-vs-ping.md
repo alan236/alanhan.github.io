@@ -18,7 +18,9 @@ WhatsApp和Ping!相比的优点:
 
 但是WhatsApp还是有些缺点的:
 * 隐私问题:你愿意给别人Ping! ID还是你的电话号码呢?以下是WhatsApp的解释:
-    > Why do you ask for my phone number?
-    > We ask because that is how WhatsApp sends chat messages between you and your contacts. We value your privacy and will never share your number with third parties, ever! If you would like to learn more about our Privacy Policy, please take a look at our Privacy Notice.
+
+  > Why do you ask for my phone number?
+  >
+  > We ask because that is how WhatsApp sends chat messages between you and your contacts. We value your privacy and will never share your number with third parties, ever! If you would like to learn more about our Privacy Policy, please take a look at our Privacy Notice.
 
 现在看来,WhatsApp和Ping!还没有非常显著的差别,不过未来如果WhatsApp实现了和BBM的通信,应该会吸引更多的用户.
