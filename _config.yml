@@ -31,3 +31,6 @@ exclude:
   - Gemfile.lock
 
 google_analytics: UA-89466560-1
+
+disqus:
+  shortname: alanhan-net
